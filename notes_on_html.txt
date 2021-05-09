@@ -1,0 +1,44 @@
+
+HTML
+HTML, meaning “HyperText Markup Language”, is a document format used for defining the semantic structure of a single web page. One could say that HTML is what the internet is made of: All the websites that we are looking at every day are all defined (described) as HTML.
+
+HTML was first proposed by Tim Berners-Lee in 1989, and layed grounds for the World Wide Web’s huge breakthrough during the 1990s. It is defined by the W3C and it’s latest version is HTML 5 which added a bunch of exciting, and useful features.
+
+The fundamental, primary feature of any web browser, such as Firefox, Chrome, Safari, is to render (display) HTML documents:
+
+Whenever you type a URL into the browser’s address bar (or click a link, such as http://rubymonstas.org) then the browser will send a request to this address (i.e. to some application running on some computer that responds to this address), and it will (in most cases) get an HTML document back as a response, which it will display to you.
+
+What is meant by “semantic structure” though?
+
+Maybe it is best to look at an example first. This is a fairly simple, but valid HTML document:
+
+<html>
+  <head>
+    <title>Ruby Monstas HTML Example</title>
+  </head>
+  <body>
+    <h1>Ruby Monstas HTML Example</h1>
+    <p>One paragraph of text.</p>
+    <p>Another paragraph of text, containing an emphasized <em>word</em>.</p>
+    <h2>A list of items</h2>
+    <ul>
+      <li>First item</li>
+      <li>Second item</li>
+      <li>Third item</li>
+    </ul>
+  </body>
+</html>
+If you look at this document you’ll notice the recurring pattern of “tags” that start with <something> and then are closed with </something>. E.g. the entire document starts with an opening <html> tag, and ends with a closing </html> tag.
+
+HTML entirely consists of these tags that have a certain meaning, can be nested, and contain content.
+
+Here’s what the HTML tags used in this example mean:
+
+<html>...</html> - the HTML document as a whole
+<head>...</head> - the header of the document, containing meta information (i.e. information about the document, not part of the document itself)
+<title>...</title> - an example of one bit of meta information, the title of the page as displayed in your browser history, and the browser window title (or tab)
+<body>...</body> - the body of the document itself, i.e. the whole of its content
+<h1>...</h1>, <h2>...</h2> - a headline level 1, and level 2, containing the headline’s text. HTML defines heading levels 1-6, which should be enough to define the structure even of large documents.
+<p>...</p> - a single paragraph, containing the paragraph’s text.
+<ul>...</ul> - an unordered list (i.e. a list that uses bullet points, as opposed to, e.g., a numbered list)
+<li>...</li> - a single list item, must be contained in either a <ul> or <ol> tag
