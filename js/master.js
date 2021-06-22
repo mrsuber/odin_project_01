@@ -37,3 +37,49 @@ container.appendChild(content);
 container.appendChild(content2);
 container.appendChild(content3);
 container.appendChild(content4);
+
+
+
+
+// the JavaScript file
+const btn = document.querySelector('#btn');
+btn.onclick = () => alert("Hello World second Button");
+
+
+// the JavaScript file
+const btn2 = document.querySelector('#btn2');
+btn2.addEventListener('click', () => {
+  alert("Hello World third button");
+});
+btn2.addEventListener('click', function (e) {
+  console.log(e);
+});
+btn2.addEventListener('click', function (e) {
+  console.log(e.target);
+});
+
+btn2.addEventListener('click', function (e) {
+  e.target.style.background = 'blue';
+});
+
+const buttons = document.querySelectorAll('button');
+
+// we use the .forEach method to iterate through each button
+buttons.forEach((button) => {
+
+  // and for each one we add a 'click' listener
+  button.addEventListener('click', () => {
+    alert(button.id);
+  });
+});
+
+function alertFunction() {
+  alert("YAY! YOU DID IT!");
+}
+
+
+// METHOD 2
+// btn.onclick = alertFunction;
+
+// METHOD 3
+// btn.addEventListener('click', alertFunction);
