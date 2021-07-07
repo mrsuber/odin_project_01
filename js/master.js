@@ -77,9 +77,14 @@ function alertFunction() {
   alert("YAY! YOU DID IT!");
 }
 
+const body = document.querySelector('body')
+const hr = document.createElement('hr')
+const javascriptSliderForImages = document.createElement('div')
+const sliderTitle = document.createElement('h1')
 
-// METHOD 2
-// btn.onclick = alertFunction;
+javascriptSliderForImages.classList.add('slider')
+sliderTitle.innerText = 'working on slider reusable code'
 
-// METHOD 3
-// btn.addEventListener('click', alertFunction);
+body.appendChild(hr)
+body.appendChild(javascriptSliderForImages)
+javascriptSliderForImages.appendChild(sliderTitle)
